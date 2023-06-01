@@ -38,7 +38,21 @@ export const routes: IRoute[] = [
         name: 'useMemo',
         key: 'hooks/useMemo'
       },
+      {
+        name: 'useCallBack',
+        key: 'hooks/useCallBack'
+      },
     ],
+  },
+  {
+    name: 'Class',
+    key: 'class',
+    children: [
+      {
+        name: '生命周期',
+        key: 'class/index',
+      },
+    ]
   },
 ];
 
