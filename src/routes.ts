@@ -42,6 +42,10 @@ export const routes: IRoute[] = [
         name: 'useCallBack',
         key: 'hooks/useCallBack'
       },
+      {
+        name: 'useReducer',
+        key: 'hooks/useReducer'
+      },
     ],
   },
   {
