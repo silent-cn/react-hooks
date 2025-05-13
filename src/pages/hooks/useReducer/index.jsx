@@ -3,6 +3,38 @@ import { Button, } from '@arco-design/web-react';
 import styles from './index.module.less'
 
 export default () => {
+    useEffect(() => {
+        // 组合式继承（原型链继承+借用构造函数继承的组合）
+        function Parent (name) {
+            this.name = name;
+            this.colors = ['red', 'blue', 'green'];
+        }
+        
+        function Child (name, age) {
+        
+            Parent.call(this, name);
+            
+            this.age = age;
+        
+        }
+        
+        Child.prototype = new Parent();
+        
+        var child1 = new Child('kevin', '18');
+        
+        child1.colors.push('black');
+        
+        console.log(child1.name); // kevin
+        console.log(child1.age); // 18
+        console.log(child1.colors); // ["red", "blue", "green", "black"]
+        
+        var child2 = new Child('daisy', '20');
+        
+        console.log(child2.name); // daisy
+        console.log(child2.age); // 20
+        console.log(child2.colors); // ["red", "blue", "green"]
+        
+    }, [])
     return (<div className={styles.wrapper}>
         <div>useReducer</div>
         <Counter />

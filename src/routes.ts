@@ -25,6 +25,24 @@ export const routes: IRoute[] = [
   {
     name: 'Example',
     key: 'example',
+    children: [
+      {
+        name: 'BroadcastChannel',
+        key: 'example/BroadcastChannelDemo'
+      },
+      {
+        name: 'WebSocket',
+        key: 'example/WebSocketDemo'
+      },
+      {
+        name: 'HOC',
+        key: 'example/HOCDemo'
+      },
+      {
+        name: 'ParentChild',
+        key: 'example/ParentChildDemo'
+      }
+    ]
   },
   {
     name: 'Hooks',
