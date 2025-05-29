@@ -76,6 +76,16 @@ export const routes: IRoute[] = [
       },
     ]
   },
+  {
+    name: 'Component',
+    key: 'component',
+    children: [
+      {
+        name: '虚拟列表',
+        key: 'component/VirtualList',
+      },
+    ]
+  },
 ];
 
 export const getName = (path: string, routes) => {
