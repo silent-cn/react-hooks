@@ -41,7 +41,7 @@ class VirtualList extends Component {
         if (container) {
             container.addEventListener('scroll', this.handleScroll);
         }
-        console.log('准备撤回111');
+        console.log('准备撤回');
         
     }
 
