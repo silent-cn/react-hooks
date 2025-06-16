@@ -41,6 +41,10 @@ export const routes: IRoute[] = [
       {
         name: 'ParentChild',
         key: 'example/ParentChildDemo'
+      },
+      {
+        name: '函数柯里化',
+        key: 'example/CurryingDemo'
       }
     ]
   },
